@@ -1,0 +1,65 @@
+
+public class customer {
+	private int customerId;
+	private String name;
+	private char gender;
+	private String address;
+	public int setCustomerId(int customerId) {
+		return this.customerId=customerId;
+	}
+	public String setName(String name) {
+		return this.name=name;
+	}
+	public char setGender(char gender) {
+		return this.gender=gender;
+	}
+	public String setAddress(String address) {
+		return this.address=address;
+	}
+	public int getCustomerId() {
+		return customerId;
+	}
+	public String getName() {
+		return name;
+	}
+	public char getGender() {
+		return gender;
+	}
+	public String getAddress() {
+		return address;
+	}
+	
+	
+	public static void main(String args[]) {
+		customer c=new customer();
+		customer d=new customer();
+		customer e=new customer();
+		c.setCustomerId(123);
+		c.setName("Unnati");
+		c.setGender('F');
+		c.setAddress("abc street");
+		System.out.println(c.getCustomerId());
+		System.out.println(c.getName());
+		System.out.println(c.getGender());
+		System.out.println(c.getAddress());
+		System.out.println("--------");
+		d.setCustomerId(456);
+		d.setName("Unnati N.");
+		d.setGender('F');
+		d.setAddress("abcd street");
+		System.out.println(d.getCustomerId());
+		System.out.println(d.getName());
+		System.out.println(d.getGender());
+		System.out.println(d.getAddress());
+		System.out.println("--------");
+		e.setCustomerId(789);
+		e.setName("Unnati Nagpurkar");
+		e.setGender('F');
+		e.setAddress("abcde street");
+		System.out.println(e.getCustomerId());
+		System.out.println(e.getName());
+		System.out.println(e.getGender());
+		System.out.println(e.getAddress());
+	}
+
+}
