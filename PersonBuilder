@@ -1,0 +1,23 @@
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PersonCollection {
+
+	public static List<Person> createShortList() {
+
+		List<Person> persons = new ArrayList<>();
+
+		Person p1 = PersonBuilder.createObject().setId(12).setName("sbb").setGender(Gender.MALE).build();
+
+		Person p2 = PersonBuilder.createObject().setId(2).setName("abc").setGender(Gender.FEMALE).build();
+
+		Person p3 = PersonBuilder.createObject().setId(1).setName("wtt").setGender(Gender.MALE).build();
+		persons.add(p1);
+		persons.add(p2);
+		persons.add(p3);
+
+		return persons;
+
+	}
+}
