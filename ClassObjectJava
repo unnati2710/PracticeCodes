@@ -1,0 +1,63 @@
+
+public class Laptop {
+	private int memory;
+	private String model;
+	private String color;
+	private int deviceId;
+	public int setMemory(int memory) {
+		return this.memory=memory;
+	}
+	public String setModel(String model) {
+		return this.model=model;
+	}
+	public String setColor(String color) {
+		return this.color=color;
+	}
+	public int setDeviceId(int deviceId) {
+		return this.deviceId=deviceId;
+	}
+	public int getMemory() {
+		return memory;
+	}
+	public String getModel() {
+		return model;
+	}
+	public String getColor() {
+		return color;
+	}
+	public int getDeviceId() {
+		return deviceId;
+	}
+	public static void main(String args[]) {
+		Laptop p=new Laptop();
+		p.setModel("Asus");
+		p.setMemory(512);
+		p.setColor("Silver");
+		p.setDeviceId(123456789);
+		System.out.println(p.getModel());
+		System.out.println(p.getMemory());
+		System.out.println(p.getColor());
+		System.out.println(p.getDeviceId());
+		System.out.println("-------------");
+		Laptop p1=new Laptop();
+		p1.setModel("Asus");
+		p1.setMemory(512);
+		p1.setColor("Silver");
+		p1.setDeviceId(123456789);
+		System.out.println(p1.getModel());
+		System.out.println(p1.getMemory());
+		System.out.println(p1.getColor());
+		System.out.println(p1.getDeviceId());
+		System.out.println("-------------");
+		Laptop p2=new Laptop();
+		p2.setModel("Asus");
+		p2.setMemory(512);
+		p2.setColor("Silver");
+		p2.setDeviceId(123456789);
+		System.out.println(p2.getModel());
+		System.out.println(p2.getMemory());
+		System.out.println(p2.getColor());
+		System.out.println(p2.getDeviceId());
+		System.out.println("-------------");
+	}
+}
