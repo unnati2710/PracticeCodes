@@ -1,0 +1,63 @@
+
+public class Person {
+	private int age;
+	private String name;
+	private String gender;
+	private int adhar;
+	public int setAge(int age) {
+		return this.age=age;
+	}
+	public String setName(String name) {
+		return this.name=name;
+	}
+	public String setGender(String gender) {
+		return this.gender=gender;
+	}
+	public int setAdhar(int adhar) {
+		return this.adhar=adhar;
+	}
+	public int getAge() {
+		return age;
+	}
+	public String getName() {
+		return name;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public int getAdhar() {
+		return adhar;
+	}
+	public static void main(String args[]) {
+		Person p=new Person();
+		p.setName("abc");
+		p.setAge(19);
+		p.setGender("F");
+		p.setAdhar(123456789);
+		System.out.println(p.getName());
+		System.out.println(p.getAge());
+		System.out.println(p.getGender());
+		System.out.println(p.getAdhar());
+		System.out.println("-------------");
+		Person p1=new Person();
+		p1.setName("def");
+		p1.setAge(19);
+		p1.setGender("F");
+		p1.setAdhar(123456789);
+		System.out.println(p1.getName());
+		System.out.println(p1.getAge());
+		System.out.println(p1.getGender());
+		System.out.println(p1.getAdhar());
+		System.out.println("-------------");
+		Person p2=new Person();
+		p2.setName("ghi");
+		p2.setAge(19);
+		p2.setGender("F");
+		p2.setAdhar(123456789);
+		System.out.println(p2.getName());
+		System.out.println(p2.getAge());
+		System.out.println(p2.getGender());
+		System.out.println(p2.getAdhar());
+	}
+
+}
