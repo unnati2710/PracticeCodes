@@ -1,0 +1,78 @@
+
+public class Result{
+	String name;
+	int percent;
+	int subject1;
+	int subject2;
+	int subject3;
+	int total=subject1+subject2+subject3;
+	public void setName(String name) {
+		this.name=name;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setSubject2(int subject2) {
+		this.subject2=subject2;
+	}
+	public int getSubject2() {
+		return subject2;
+	}
+	public void setSubject3(int subject3) {
+		this.subject3=subject3;
+	}
+	public int getSubject3() {
+		return subject3;
+	}
+	public void setSubject1(int subject1) {
+		this.subject1=subject1;
+	}
+	public int getSubject1() {
+		return subject1;
+	}
+	public double calulatePercent() {
+		percent=(total/300)*100;
+		return percent;
+	}
+	public void grade() {
+		if(percent>=90) {
+			System.out.println("Grade A");
+		}
+		else if(percent<90 && percent>70) {
+			System.out.println("Grade B");
+		}
+		else if(percent<70 && percent>50) {
+			System.out.println("Grade C");
+		}
+		else if(percent<50 && percent>=35) {
+			System.out.println("Grade D");
+		}
+		else {
+			System.out.println("Grade F");
+		}
+	}
+	public void status() {
+		if(percent>35) {
+			System.out.println("Pass");
+		}
+		else {
+			System.out.println("Fail");
+		}
+	}
+  public static void main(String args[]) {
+	  Result s1 = new Result();
+	  System.out.println("Name:");
+	  s1.setName("Unnati");
+	  s1.setSubject1(89);
+	  s1.setSubject2(90);
+	  s1.setSubject3(78);
+	  System.out.println(s1.getName());
+	  System.out.println("Marks for subject 1:"+s1.getSubject1());
+	  System.out.println("Marks for subject 2:"+s1.getSubject2());
+	  System.out.println("Marks for subject 3:"+s1.getSubject3());
+	  s1.calulatePercent();
+	  s1.grade();
+	  s1.status();
+	  
+  }
+}
