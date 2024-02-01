@@ -1,0 +1,18 @@
+package jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class jdbcExample {
+	public static void main(String args[]) throws ClassNotFoundException, SQLException
+	{
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		
+		Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/unnati","root","root");
+		
+// "jdbc:mysql://type of host:port name/name of schema created", "name of user of database", "password of database"
+
+System.out.println("abc");
+	}
+}
